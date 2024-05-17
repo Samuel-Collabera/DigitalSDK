@@ -40,7 +40,7 @@ font="sans serif"
 class TitleTemplate:
 
     def __init__(self, page_title='Untitled App', layout='wide', image=image_folder / 'C_for_Collabera.png'):
-        if str(image) == image_folder / 'C_for_Collabera.png':
+        if str(image) == str(image_folder / 'C_for_Collabera.png'):
             image_str = b'iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAARVBMVEUAAABSeatEX3SIsLK76dAqVro4UGoGCQsKFCslLywOFBhjfHMYMm4pSYgPGzIpTp9BbLt0nbctOTem0b9mg4KZvqeFppN6DwgzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAASElEQVQY02NgIBqws6NwOUVZWLiR+FwsYpxCnEgC3MKoGhiYRdBMZGZCExBkQxNgRFfBxohmKJcALwcHB7IIHz8rKw9ep+MBAMvSAXFmbyFSAAAAAElFTkSuQmCC'
             image_bytes = base64.b64encode(image_str)
             im = Image.open(BytesIO(image_bytes))
