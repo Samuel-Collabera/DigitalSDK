@@ -1,1 +1,1 @@
-HAHAH
+Use Collabera Digitals Streamlit template in just one import
